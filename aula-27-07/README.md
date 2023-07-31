@@ -1,6 +1,7 @@
-## Getting Started
+## Exercício 1
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Crie uma classe Java (versão 17) Pessoa com os atributos Nome, Data de Nascimento e Idade.
+Crie no mínimo três Construtores e métodos (getters e setters). 
 
 ## Folder Structure
 
