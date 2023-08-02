@@ -1,23 +1,18 @@
-import java.time.LocalDate;
-import java.time.Period;
-
 public class Pessoa {
     private String nome;
-    private LocalDate dataNascimento;
+    private String dataNascimento;
     private int idade;
 
     // constructor 1, 2 e 3
-    public Pessoa(String nome, LocalDate dataNascimento, int idade) {
+    public Pessoa(String nome, String dataNascimento, int idade) {
         this.nome = nome;
         this.dataNascimento = dataNascimento;
         this.idade = idade;
     }
     
-    public Pessoa(String nome, LocalDate dataNascimento) {
+    public Pessoa(String nome, String dataNascimento) {
         this.nome = nome;
         this.dataNascimento = dataNascimento;
-        LocalDate hoje = LocalDate.now();
-        this.idade = Period.between(dataNascimento, hoje).getYears();
     }
 
     public Pessoa() {
@@ -33,11 +28,11 @@ public class Pessoa {
     }
 
     // getter e setter 2
-    public LocalDate getDataNascimento() {
+    public String getDataNascimento() {
         return dataNascimento;
     }
 
-    public void setDataNascimento(LocalDate dataNascimento) {
+    public void setDataNascimento(String dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
 
